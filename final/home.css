@@ -4,9 +4,20 @@ body, h1, p, div {
     padding: 0;
 }
 
-p{
-	font-size: 19px;
+/* Define a base font size (optional) */
+html {
+    font-size: 1rem; /* Set your desired base font size */
 }
+
+/* Use "rem" units for font sizes */
+p {
+    font-size: 1rem; /* 1rem is equivalent to the base font size */
+}
+
+h1 {
+    font-size: 2rem; /* Example: Twice the base font size */
+}
+
 
 /* Basic styling for the whole page */
 body {
@@ -18,22 +29,29 @@ body {
     display: flex;
     flex-direction: row;
     height: 100vh;
+	overflow: auto;
 }
 
 .content-container {
     display: flex;
     justify-content: center; /* Center horizontally */
-    align-items: center; /* Center vertically */
+    align-items: flex-start; /* Center vertically */
     height: 100%; /* Make the container fill the viewport height */
     position: relative; /* Required for pseudo-element positioning */
 	text-wrap: wrap;
+	width: 100%;
 }
 
 .text-container{
-
+    display: flex;
+	flex-direction: column;
     justify-content: center; /* Center horizontally */
-    align-items: center; /* Center vertically */
+
 	width: 65%;
+
+	min-height: 100%;
+
+
 
 
 }
@@ -48,6 +66,7 @@ body {
     font-family: 'Cascadia Mono', monospace; /* Use Cascadia Mono font or your desired monospace font */
     text-align: right; /* Right-align line numbers */
     padding: 2px 5px; /* Adjust padding as needed */
+	font-size: 1rem;
 }
 
 
@@ -66,5 +85,28 @@ body {
     top: 0;
     left: 0;
     bottom: 0;
-    width: 40px; /* Adjust the width as needed */
+    width: 2rem; /* Adjust the width as needed */
+}
+
+.small-text {
+    font-size: 16px;
+    color: #ffffff; /* Grey color */
+	font-family: 'Cascadia Mono', monospace; /* Use Cascadia Mono font */
+}
+
+.huge-text {
+    font-size: 48px; /* Adjust the size as needed */
+    font-weight: bold; /* Makes the text bold */
+    margin: 10px 0; /* Adds some space above and below the text */
+	font-family:  monospace; /* Use Cascadia Mono font */
+}
+
+.huge-text {
+    overflow: hidden; /* Hide any overflowing content */
+}
+
+.blue-text {
+    font-size: 18px; /* Adjust the size as needed */
+    color: #61afef; /* VS Code blue color */
+	font-family: 'Cascadia Mono', monospace; /* Use Cascadia Mono font */
 }

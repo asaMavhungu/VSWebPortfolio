@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Me</title>
-    <link rel="stylesheet" href="styles-about.css">
+    <link rel="stylesheet" href="about.css">
 </head>
 <body id="about-body">
     <div class="code-start"></div>
@@ -32,7 +32,7 @@
         </div>
     </div>
 
-    <div class="code-end"></div>
+    <div class="right-pad"></div>
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script>
@@ -41,9 +41,11 @@
             const $codeStart = $('.code-start');
             const $codeEnd = $('.code-end');
 
+            const divHeight = $('.content-container')[0].scrollHeight;
+
             // Calculate the number of lines based on the viewport height
-            const windowHeight = window.innerHeight;
-            const lineHeight = 20; // Change this value as needed for your desired line height
+            const windowHeight = divHeight;
+            const lineHeight = 23; // Change this value as needed for your desired line height
             const numberOfLines = Math.floor(windowHeight / lineHeight);
 
             // Generate and append line numbers

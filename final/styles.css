@@ -67,7 +67,7 @@ body {
 .editor-container {
     flex-grow: 1;
     position: relative;
-    overflow: auto;
+
 }
 
 iframe {

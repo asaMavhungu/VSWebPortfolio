@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Welcome to My Page</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="home.css">
 </head>
 <body>
 
@@ -27,10 +27,11 @@
         $(document).ready(function () {
             // Get the code-start and code-end elements
             const $codeStart = $('.code-start');
+            const divHeight = $('.content-container')[0].scrollHeight;
 
             // Calculate the number of lines based on the viewport height
-            const windowHeight = window.innerHeight;
-            const lineHeight = 20; // Change this value as needed for your desired line height
+            const windowHeight = divHeight;
+            const lineHeight = 23; // Change this value as needed for your desired line height
             const numberOfLines = Math.floor(windowHeight / lineHeight);
                 
             // Generate and append line numbers
