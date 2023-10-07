@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asakundwi Mavhungu - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav>
+        <div class="container">
+            <h1>Asakundwi Mavhungu</h1>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Header Section -->
+    <header>
+        <div class="container">
+            <h2>Computer Science Enthusiast</h2>
+            <p>Passionate about game design, data science, and AI.</p>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="container">
+            <h2>About Me</h2>
+            <p>
+                I'm an enthusiastic Computer Science undergraduate with a strong passion for game design,
+                computer graphics, data science, artificial intelligence, and machine learning. I strive to
+                combine technical proficiency with creative thinking, all while aspiring to make a positive
+                impact in these exciting fields.
+            </p>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="bg-light">
+        <div class="container">
+            <h2>Skills</h2>
+            <ul>
+                <li>Data Engineering</li>
+                <li>Machine Learning Engineering</li>
+                <li>Statistics</li>
+                <li>Excel</li>
+                <li>Tutoring and Teaching</li>
+            </ul>
+            <p>
+                Technologies: Git, Linux/Unix, Python, Flask, Android, Pytorch, Numpy, Pygame, Matplotlib,
+                Programming Languages: Python, Java/Kotlin, HTML, CSS, JavaScript, C#, C/C++, ARM, MIPS Assembly,
+                SQL, R
+            </p>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <div class="container">
+            <h2>Projects</h2>
+            <!-- Project 1 -->
+            <div class="project">
+                <h3>Rain Animation Project</h3>
+                <p>Developed an animated rain scene with random raindrop behavior.</p>
+                <p>
+                    Undertaken as a learning experience while still new to programming, showcasing dedication
+                    to skill development and creative exploration.
+                </p>
+                <a href="https://github.com/asaMavhungu/Rain-in-python" target="_blank">GitHub</a>
+            </div>
+            <!-- Project 2 -->
+            <div class="project">
+                <h3>Syft Hackathon</h3>
+                <p>Achieved an impressive 83.33% data compression rate, reducing the data to one-sixth of its original size.</p>
+                <p>
+                    Successfully tackled the challenge independently, showcasing self-reliance and technical expertise.
+                </p>
+                <a href="https://github.com/asaMavhungu/Syft-2023-Hackathon-Round-2" target="_blank">GitHub</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <ul>
+                <li>Email: mavhasa17@gmail.com</li>
+                <li>Phone: +27794880310</li>
+                <li>Portfolio: <a href="https://asamavhungu.github.io" target="_blank">asamavhungu.github.io</a></li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 Asakundwi Mavhungu</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript for smooth scrolling -->
+    <script>
+        const links = document.querySelectorAll('nav a');
+        links.forEach(link => {
+            link.addEventListener('click', smoothScroll);
+        });
+
+        function smoothScroll(e) {
+            e.preventDefault();
+            const targetId = this.getAttribute('href').substring(1);
+            const target = document.getElementById(targetId);
+            window.scrollTo({
+                top: target.offsetTop,
+                behavior: 'smooth'
+            });
+        }
+    </script>
+</body>
+</html>

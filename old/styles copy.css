@@ -1,0 +1,20 @@
+/* Add your custom styles here */
+
+/* Header */
+.header {
+    background-image: url('header-background.jpg');
+    background-size: cover;
+    color: #fff;
+    text-align: center;
+    padding: 150px 0;
+}
+
+/* Portfolio Item Cards */
+.card {
+    margin-bottom: 20px;
+}
+
+/* Footer */
+footer {
+    margin-top: 20px;
+}
